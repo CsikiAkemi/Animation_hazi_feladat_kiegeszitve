@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<ImageView
+android:id="@+id/imgView"
+android:layout_width="200dp"
+android:layout_height="200dp"
+android:src="@drawable/logo"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="50dp"
+    />
+
+<LinearLayout
+android:id="@+id/linear1"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_below="@+id/imgView"
+android:weightSum="3"
+android:layout_marginTop="30dp"
+    >
+<Button
+    android:id="@+id/btnBlink"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:baselineAligned="false"
+    android:layout_margin="10dp"
+    android:layout_weight="1"
+    android:padding="5dp"
+    android:text="Blink"
+    android:textColor="@color/white"
+   />
+<Button
+    android:id="@+id/btnRotate"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:text="Rotate"
+    android:textColor="@color/white"
+    android:layout_weight="0"
+    android:baselineAligned="false"/>
+<Button
+    android:id="@+id/btnFadeIn"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:text="Fade In"
+    android:baselineAligned="false"
+    android:textColor="@color/white"
+    android:layout_weight="1"/>
+    <Button
+        android:id="@+id/btnFadeOut"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:text="Fade Out"
+        android:baselineAligned="false"
+        android:textColor="@color/white"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+<LinearLayout
+android:id="@+id/linear2"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_below="@+id/linear1"
+android:weightSum="3"
+android:layout_marginTop="30dp"
+    >
+<Button
+    android:id="@+id/btnMove"
+    android:layout_height="wrap_content"
+    android:layout_width="0dp"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:text="Move"
+    android:textColor="@color/white"
+    android:layout_weight="1"/>
+<Button
+    android:id="@+id/btnSlide"
+    android:layout_height="wrap_content"
+    android:layout_width="0dp"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:text="Slide"
+    android:textColor="@color/white"
+    android:layout_weight="1"/>
+<Button
+    android:id="@+id/btnZoom"
+    android:layout_height="wrap_content"
+    android:layout_width="0dp"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:text="Zoom"
+    android:textColor="@color/white"
+    android:layout_weight="1"/>
+
+</LinearLayout>
+
+<Button
+android:layout_below="@+id/linear2"
+android:id="@+id/btnStop"
+android:layout_height="wrap_content"
+android:layout_width="match_parent"
+android:layout_margin="20dp"
+android:padding="5dp"
+android:text="Stop Animations"
+android:textColor="@color/white"
+android:layout_weight="2"/>
+    </RelativeLayout>
